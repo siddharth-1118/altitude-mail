@@ -2,7 +2,6 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
-import { app } from './mail/server';
 
 export default defineConfig(() => {
   const rootDir = __dirname;
@@ -12,12 +11,6 @@ export default defineConfig(() => {
     plugins: [
       react(),
       tailwindcss(),
-      {
-        name: 'express-mail-api',
-        configureServer(server) {
-          server.middlewares.use(app);
-        },
-      },
     ],
     optimizeDeps: {
       force: true,
