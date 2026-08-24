@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Bell, Settings, LogOut } from 'lucide-react';
+import { Search, Bell, Settings, LogOut, Sparkles } from 'lucide-react';
 import { MailNavTab } from '../../types/mail';
 
 interface MailHeaderProps {

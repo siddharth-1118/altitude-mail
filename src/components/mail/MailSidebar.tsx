@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Sparkles,
   Inbox,
   CheckSquare,
   Star,
