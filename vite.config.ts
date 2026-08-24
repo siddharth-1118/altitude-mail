@@ -23,9 +23,6 @@ export default defineConfig(() => {
     build: {
       outDir: 'dist',
       emptyOutDir: true,
-      rollupOptions: {
-        input: path.resolve(rootDir, 'mail/index.html'),
-      },
     },
     server: {
       port: 3001,
